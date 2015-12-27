@@ -13,11 +13,13 @@ Clone repo into a new directory in your project:
 
 Edit `gulpfile.js` and `config.yml` as required:
 
-Now run gulp - the `default` task is `develop`:
+The `default` task is `develop`.
+
+Run gulp:
 
     $ gulp <task name>
 
-Build:
+Build tasks prepare the application for distribution:
     
     $ gulp build
 
