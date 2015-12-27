@@ -1,4 +1,9 @@
 {
+  "meta": {
+    "title": "Example",
+    "description": "A description",
+    "author": "Your Name (YourName.com)"
+  },
   "name": {
     "first": "Taro",
     "last":  "Momo"
