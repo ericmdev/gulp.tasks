@@ -12,3 +12,19 @@ jade:
   data: "example/src/templates/index.json"
   tpl: "example/src/templates/index.jade"
   dst: "example/public"
+
+# Humans.
+humans:
+  src: 
+    - "example/public/index.html"
+  dest: "example/public"
+  opts:
+    - team: 'Personal (@username on Twitter)'
+    - thanks: 
+      - 'Node (@nodejs on Twitter)'
+      - 'Gulp (@gulpjs on Twitter)'
+    - site:
+      - 'Standards: HTML5, CSS3'
+      - 'Components: jQuery, Normalize.css'
+      - 'Software: Atom'
+    - note: 'Built with love'
