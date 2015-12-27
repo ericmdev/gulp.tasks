@@ -4,6 +4,17 @@ tasks: "tasks"
 ext:
   - ".coffee"
 
+# Webserver.
+webserver:
+  src: "./example/public"
+  opts:
+    livereload: false
+    directoryListing: false
+    open: false
+    host: "localhost"
+    port: 8000
+    https: false
+
 # Jasmine.
 jasmine:
   src: 
