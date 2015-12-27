@@ -8,14 +8,14 @@ Usage
 
 Clone repo into a new directory in your project:
     
-    $ git clone [[repo]] ./gulp
+    $ git clone <repo> ./gulp
     $ cd ./gulp
 
 Edit `gulpfile.js` and `config.yml` as required:
 
 Now run gulp - the `default` task is `develop`:
 
-    $ gulp [[task name]]
+    $ gulp <task name>
 
 Build:
     
