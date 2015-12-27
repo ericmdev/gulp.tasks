@@ -1,2 +1,7 @@
+# Load all requirements.
 gulp = require 'gulp'
-gulpTaskLoader = require 'gulp-task-loader'
+GulpTaskLoader = require 'gulp-task-loader'
+options =
+  dir: 'tasks',
+  exts: ['.coffee']
+gulpTaskLoader = GulpTaskLoader options
