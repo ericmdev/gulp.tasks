@@ -13,7 +13,6 @@ config = require './config.yml'
 
 # Convert config.root to absolute path
 absroot = relpath config.root
-console.log absroot
 
 # Configure gulp-task-loader
 opts =
@@ -27,12 +26,12 @@ gulpTaskLoader = GulpTaskLoader opts
 
 # Develop.
 gulp.task 'develop', (done)->
-    runSequence 'jade', 'imagemin', 'svgmin', 'webpack:develop', 'webserver', ()->
+    runSequence 'jade', 'imagemin', 'svgmin', 'sass:develop', 'webpack:develop', 'webserver', ()->
         done()
 
 # Build.
 gulp.task 'build', (done)->
-    runSequence 'jade', 'humans', 'robots', 'imagemin', 'svgmin', 'webpack:build', ()->
+    runSequence 'jade', 'humans', 'robots', 'imagemin', 'svgmin', 'sass:build', 'webpack:build', ()->
         done()
 
 # Default.
