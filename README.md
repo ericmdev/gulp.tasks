@@ -17,3 +17,10 @@ Now run gulp:
 
     $ gulp [[task name]]
 
+Development
+-----------
+
+Test tasks:
+
+    $ npm test
+
