@@ -26,6 +26,15 @@ jade:
   tpl: 'example/src/templates/index.jade'
   dest: 'example/public'
 
+# Angular TemplateCache.
+angular_templatecache:
+  src: 'example/src/js/client/**/*.html'
+  dest: 'example/src/js/client/modules'
+  file: 'templates.js'
+  opts:
+    standalone: true
+    moduleSystem: 'Browserify' # RequireJS, Browserify, ES6 and IIFE
+
 # Sass.
 sass:
   src: 'example/src/sass/**/style.scss'
@@ -33,7 +42,7 @@ sass:
   opts:
     style: 'expanded'
 
-# Autoprefixe
+# Autoprefixer.
 autoprefixer:
   opts:
     - 'last 2 version'
