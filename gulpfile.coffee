@@ -15,4 +15,5 @@ opts =
 gulpTaskLoader = GulpTaskLoader opts
 
 # Define tasks.
+gulp.task 'default', ['jade']
 gulp.task 'test', ['jasmine']
