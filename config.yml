@@ -1,0 +1,5 @@
+# Configure gulp-task-loader.
+root: "./"
+tasks: "tasks"
+ext:
+  - ".coffee"
