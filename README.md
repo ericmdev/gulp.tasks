@@ -26,7 +26,7 @@ Build tasks prepare the application for distribution:
 Test
 ----
 
-Test tasks using npm:
+Use npm `test` script to test tasks:
 
     $ npm test
 
