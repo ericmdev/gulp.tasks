@@ -5,3 +5,7 @@ options =
   dir: 'tasks',
   exts: ['.coffee']
 gulpTaskLoader = GulpTaskLoader options
+
+# Load configuration.
+require 'require-yaml'
+config = require './config.yml'
