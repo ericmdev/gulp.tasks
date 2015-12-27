@@ -6,21 +6,27 @@ Gulp tasks in CoffeeScript - configured in YAML.
 Usage
 -----
 
-Clone repo into your project:
+Clone repo into a new directory in your project:
     
-    $ git clone [[repo]] ./gulp
+    $ git clone <repo> ./gulp
     $ cd ./gulp
 
-Edit `gulpfile.js` and `config.yml` to configure gulp tasks:
+Edit the `gulpfile.js` and `config.yml` as required:
 
-Now run gulp:
+The `default` task is `develop`.
 
-    $ gulp [[task name]]
+Run gulp:
 
-Development
------------
+    $ gulp <task name>
 
-Test tasks:
+Build tasks prepare the application for distribution:
+    
+    $ gulp build
+
+Test
+----
+
+Test tasks using npm:
 
     $ npm test
 

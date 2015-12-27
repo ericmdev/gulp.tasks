@@ -1,3 +1,5 @@
+'use strict'
+
 gulp         = require 'gulp'
 data         = require 'gulp-data'
 jadeTemplate = require 'gulp-jade-template'

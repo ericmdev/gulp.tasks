@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 # Load all requirements.
 gulp           = require 'gulp'
@@ -13,7 +13,6 @@ config = require './config.yml'
 
 # Convert config.root to absolute path
 absroot = relpath config.root
-console.log absroot
 
 # Configure gulp-task-loader
 opts =
@@ -27,9 +26,12 @@ gulpTaskLoader = GulpTaskLoader opts
 
 # Develop.
 gulp.task 'develop', (done)->
-    # run in sequence
-    runSequence 'jade', 'humans', 'robots', 'imagemin', 'svgmin', ()->
-        # done
+    runSequence 'jade', 'imagemin', 'svgmin', 'sass:develop', 'angular-templatecache', 'webpack:develop', 'webserver', ()->
+        done()
+
+# Build.
+gulp.task 'build', (done)->
+    runSequence 'jade', 'humans', 'robots', 'imagemin', 'svgmin', 'sass:build', 'webpack:build', ()->
         done()
 
 # Default.

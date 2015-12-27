@@ -1,30 +1,72 @@
 # Configure gulp-task-loader.
-root: "./"
-tasks: "tasks"
+root: './'
+tasks: 'tasks'
 ext:
-  - ".coffee"
+  - '.coffee'
+
+# Webserver.
+webserver:
+  src: './example/public'
+  opts:
+    livereload: false
+    directoryListing: false
+    open: false
+    host: 'localhost'
+    port: 8000
+    https: false
 
 # Jasmine.
 jasmine:
   src: 
-    - "example/src/js/spec/**/*.spec.js"
+    - 'example/src/js/spec/**/*.spec.js'
 
 # Jade.
 jade:
-  data: "example/src/templates/index.json"
-  tpl: "example/src/templates/index.jade"
-  dest: "example/public"
+  data: 'example/src/templates/index.json'
+  tpl: 'example/src/templates/index.jade'
+  dest: 'example/public'
+
+# Angular TemplateCache.
+angular_templatecache:
+  src: 'example/src/js/client/**/*.html'
+  dest: 'example/src/js/client/modules'
+  file: 'templates.js'
+  opts:
+    standalone: true
+    moduleSystem: 'Browserify' # RequireJS, Browserify, ES6 and IIFE
+
+# Sass.
+sass:
+  src: 'example/src/sass/**/style.scss'
+  dest: 'example/public/css'
+  opts:
+    style: 'expanded'
+
+# Autoprefixer.
+autoprefixer:
+  opts:
+    - 'last 2 version'
+    - 'safari 5'
+    - 'ie 8'
+    - 'ie 9'
+    - 'opera 12.1'
+
+# Webpack.
+webpack:
+  src: 'example/src/js/client'
+  dest: 'example/public/js'
+  config: 'example/webpack.config.js'
 
 # Images.
 images:
-  src: "example/src/img"
-  dest: "example/public/img"
+  src: 'example/src/img'
+  dest: 'example/public/img'
 
 # Humans.
 humans:
   src: 
-    - "example/public/index.html"
-  dest: "example/public"
+    - 'example/public/index.html'
+  dest: 'example/public'
   opts:
     - team: 'Personal (@username on Twitter)'
     - thanks: 
@@ -39,8 +81,8 @@ humans:
 # Robots.
 robots:
   src: 
-    - "example/public/index.html"
-  dest: "example/public"
+    - 'example/public/index.html'
+  dest: 'example/public'
   opts:
     - useragent: '*'
     - allow: 
@@ -49,3 +91,4 @@ robots:
       - 'js/'
     - disallow:
       - 'cgi-bin/'
+

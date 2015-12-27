@@ -1,3 +1,5 @@
+'use strict'
+
 gulp     = require 'gulp'
 plumber  = require 'gulp-plumber'
 changed  = require 'gulp-changed'
