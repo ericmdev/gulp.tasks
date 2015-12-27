@@ -3,15 +3,22 @@ root: "./"
 tasks: "tasks"
 ext:
   - ".coffee"
+
 # Jasmine.
 jasmine:
   src: 
     - "example/src/js/spec/**/*.spec.js"
+
 # Jade.
 jade:
   data: "example/src/templates/index.json"
   tpl: "example/src/templates/index.jade"
   dest: "example/public"
+
+# Images.
+images:
+  src: "example/src/img"
+  dest: "example/public/img"
 
 # Humans.
 humans:
