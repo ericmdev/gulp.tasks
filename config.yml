@@ -11,7 +11,7 @@ jasmine:
 jade:
   data: "example/src/templates/index.json"
   tpl: "example/src/templates/index.jade"
-  dst: "example/public"
+  dest: "example/public"
 
 # Humans.
 humans:
