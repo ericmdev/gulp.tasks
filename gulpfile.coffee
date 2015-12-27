@@ -9,3 +9,6 @@ gulpTaskLoader = GulpTaskLoader options
 # Load configuration.
 require 'require-yaml'
 config = require './config.yml'
+
+# Define tasks.
+gulp.task 'test', ['jasmine']
