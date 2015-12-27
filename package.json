@@ -27,6 +27,7 @@
     "gulp-data": "^1.2.1",
     "gulp-dest": "^0.2.3",
     "gulp-humans": "^2.0.2",
+    "gulp-imagemin": "^2.4.0",
     "gulp-jade-template": "0.0.7",
     "gulp-jasmine": "^2.2.1",
     "gulp-notify": "^2.2.0",
