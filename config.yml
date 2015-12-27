@@ -3,7 +3,35 @@ root: "./"
 tasks: "tasks"
 ext:
   - ".coffee"
+
 # Jasmine.
 jasmine:
   src: 
     - "example/src/js/spec/**/*.spec.js"
+
+# Jade.
+jade:
+  data: "example/src/templates/index.json"
+  tpl: "example/src/templates/index.jade"
+  dest: "example/public"
+
+# Images.
+images:
+  src: "example/src/img"
+  dest: "example/public/img"
+
+# Humans.
+humans:
+  src: 
+    - "example/public/index.html"
+  dest: "example/public"
+  opts:
+    - team: 'Personal (@username on Twitter)'
+    - thanks: 
+      - 'Node (@nodejs on Twitter)'
+      - 'Gulp (@gulpjs on Twitter)'
+    - site:
+      - 'Standards: HTML5, CSS3'
+      - 'Components: jQuery, Normalize.css'
+      - 'Software: Atom'
+    - note: 'Built with love'
