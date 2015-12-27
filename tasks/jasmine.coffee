@@ -1,4 +1,4 @@
-gulp = require 'gulp'
+gulp    = require 'gulp'
 jasmine = require 'gulp-jasmine'
 
 module.exports = () ->
