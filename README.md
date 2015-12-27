@@ -3,6 +3,24 @@ Gulp Tasks
 
 Gulp tasks in CoffeeScript - configured in YAML.
 
+Tasks
+-----
+
+- sass
+  - :build
+  - :develop
+- webpack
+  - :build
+  - :develop
+- angular-templatecache
+- humans
+- imagemin
+- jade
+- jasmine
+- robots
+- svgmin
+- webserver
+
 Usage
 -----
 
