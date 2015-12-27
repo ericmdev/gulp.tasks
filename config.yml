@@ -1,0 +1,14 @@
+# Configure gulp-task-loader.
+root: "./"
+tasks: "tasks"
+ext:
+  - ".coffee"
+# Jasmine.
+jasmine:
+  src: 
+    - "example/src/js/spec/**/*.spec.js"
+# Jade.
+jade:
+  data: "example/src/templates/index.json"
+  tpl: "example/src/templates/index.jade"
+  dst: "example/public"
