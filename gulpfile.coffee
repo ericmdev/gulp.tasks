@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 # Load all requirements.
 gulp           = require 'gulp'

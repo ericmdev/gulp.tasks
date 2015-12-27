@@ -1,3 +1,5 @@
+'use strict'
+
 gulp      = require 'gulp'
 webserver = require 'gulp-webserver'
 

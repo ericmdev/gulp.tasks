@@ -1,3 +1,5 @@
+'use strict'
+
 gulp   = require 'gulp'
 robots = require 'gulp-robots'
 

@@ -1,3 +1,5 @@
+'use strict'
+
 gulp   = require 'gulp'
 changed  = require 'gulp-changed'
 webpack = require 'gulp-webpack'

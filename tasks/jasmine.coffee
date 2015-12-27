@@ -1,3 +1,5 @@
+'use strict'
+
 gulp    = require 'gulp'
 jasmine = require 'gulp-jasmine'
 
