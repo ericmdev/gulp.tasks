@@ -27,9 +27,12 @@ gulpTaskLoader = GulpTaskLoader opts
 
 # Develop.
 gulp.task 'develop', (done)->
-    # run in sequence
-    runSequence 'jade', 'humans', 'robots', 'imagemin', 'svgmin', 'webpack', ()->
-        # done
+    runSequence 'jade', 'imagemin', 'svgmin', 'webpack:develop', ()->
+        done()
+
+# Build.
+gulp.task 'build', (done)->
+    runSequence 'jade', 'humans', 'robots', 'imagemin', 'svgmin', 'webpack:build', ()->
         done()
 
 # Default.
