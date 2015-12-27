@@ -17,8 +17,8 @@ Now run gulp:
 
     $ gulp [[task name]]
 
-Development
------------
+Test
+----
 
 Test tasks:
 
