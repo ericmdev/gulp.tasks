@@ -3,3 +3,7 @@ root: "./"
 tasks: "tasks"
 ext:
   - ".coffee"
+# Jasmine.
+jasmine:
+  src: 
+    - "example/src/js/spec/**/*.spec.js"
