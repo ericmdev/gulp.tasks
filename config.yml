@@ -35,3 +35,17 @@ humans:
       - 'Components: jQuery, Normalize.css'
       - 'Software: Atom'
     - note: 'Built with love'
+
+# Robots.
+robots:
+  src: 
+    - "example/public/index.html"
+  dest: "example/public"
+  opts:
+    - useragent: '*'
+    - allow: 
+      - 'img/'
+      - 'css/'
+      - 'js/'
+    - disallow:
+      - 'cgi-bin/'

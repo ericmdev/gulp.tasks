@@ -28,7 +28,7 @@ gulpTaskLoader = GulpTaskLoader opts
 # Develop.
 gulp.task 'develop', (done)->
     # run in sequence
-    runSequence 'jade', 'humans', 'svgmin', ()->
+    runSequence 'jade', 'humans', 'robots', 'svgmin', ()->
         # done
         done()
 
