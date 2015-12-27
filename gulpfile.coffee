@@ -1,3 +1,5 @@
+'use strict';
+
 # Load all requirements.
 gulp = require 'gulp'
 GulpTaskLoader = require 'gulp-task-loader'
