@@ -2,13 +2,18 @@
 gulp = require 'gulp'
 GulpTaskLoader = require 'gulp-task-loader'
 require 'require-yaml'
+relpath = require 'relative-path'
 
 # Load configuration.
 config = require './config.yml'
 
+# Convert config.root to absolute path
+absroot = relpath config.root
+console.log absroot
+
 # Configure gulp-task-loader
 opts =
-  root: config.root,
+  root: absroot,
   dir: config.tasks,
   exts: config.ext,
   config: config
