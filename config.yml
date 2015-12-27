@@ -15,6 +15,12 @@ jade:
   tpl: "example/src/templates/index.jade"
   dest: "example/public"
 
+# Webpack.
+webpack:
+  src: "example/src/js/client"
+  dest: "example/public/js"
+  config: "example/webpack.config.js"
+
 # Images.
 images:
   src: "example/src/img"
@@ -49,3 +55,4 @@ robots:
       - 'js/'
     - disallow:
       - 'cgi-bin/'
+
