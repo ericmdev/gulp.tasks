@@ -1,6 +1,6 @@
-gulp = require 'gulp'
-plumber = require 'gulp-plumber'
-changed = require 'gulp-changed'
+gulp     = require 'gulp'
+plumber  = require 'gulp-plumber'
+changed  = require 'gulp-changed'
 imagemin = require 'gulp-imagemin'
 
 module.exports = () ->

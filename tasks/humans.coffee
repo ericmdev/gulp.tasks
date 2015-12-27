@@ -1,4 +1,4 @@
-gulp = require 'gulp'
+gulp   = require 'gulp'
 humans = require 'gulp-humans'
 
 module.exports = () ->

@@ -1,7 +1,7 @@
-gulp = require 'gulp'
+gulp    = require 'gulp'
 plumber = require 'gulp-plumber'
 changed = require 'gulp-changed'
-svgmin = require 'gulp-svgmin'
+svgmin  = require 'gulp-svgmin'
 
 module.exports = () ->
   return gulp.src this.opts.config.images.src + '/**/*.svg'

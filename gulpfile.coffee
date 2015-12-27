@@ -1,12 +1,12 @@
 'use strict';
 
 # Load all requirements.
-gulp = require 'gulp'
+gulp           = require 'gulp'
 GulpTaskLoader = require 'gulp-task-loader'
 require 'require-yaml'
-relpath = require 'relative-path'
-runSequence = require 'run-sequence'
-notify = require 'gulp-notify'
+relpath        = require 'relative-path'
+runSequence    = require 'run-sequence'
+notify         = require 'gulp-notify'
 
 # Load configuration.
 config = require './config.yml'

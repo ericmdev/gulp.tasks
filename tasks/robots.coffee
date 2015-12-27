@@ -1,4 +1,4 @@
-gulp = require 'gulp'
+gulp   = require 'gulp'
 robots = require 'gulp-robots'
 
 module.exports = () ->
