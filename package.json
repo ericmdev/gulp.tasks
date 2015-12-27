@@ -1,0 +1,34 @@
+{
+  "name": "gulp.tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp --require coffee-script/register --gulpfile ./tests/gulpfile.coffee test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericmdev/gulp.tasks.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Eric Mugerwa <ericmdev@gmail.com> (http://ericmugerwa.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericmdev/gulp.tasks/issues"
+  },
+  "homepage": "https://github.com/ericmdev/gulp.tasks#readme",
+  "devDependencies": {
+    "coffee-gulp": "0.0.2",
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.0",
+    "gulp-data": "^1.2.1",
+    "gulp-dest": "^0.2.3",
+    "gulp-jade-template": "0.0.7",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-task-loader": "^1.3.1",
+    "relative-path": "^1.0.0",
+    "require-yaml": "0.0.1"
+  }
+}
