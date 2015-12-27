@@ -5,6 +5,7 @@ gulp = require 'gulp'
 GulpTaskLoader = require 'gulp-task-loader'
 require 'require-yaml'
 relpath = require 'relative-path'
+runSequence = require 'run-sequence'
 
 # Load configuration.
 config = require './config.yml'
@@ -21,6 +22,15 @@ opts =
   config: config
 gulpTaskLoader = GulpTaskLoader opts
 
-# Define tasks.
-gulp.task 'default', ['jade']
+# Develop.
+gulp.task 'develop', (done)->
+    # run in sequence
+    runSequence 'jade', 'humans', ()->
+        # done
+        done()
+
+# Default.
+gulp.task 'default', ['develop']
+
+# Test.
 gulp.task 'test', ['jasmine']
