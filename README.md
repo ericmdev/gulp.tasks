@@ -13,14 +13,18 @@ Clone repo into your project:
 
 Edit `gulpfile.js` and `config.yml` to configure gulp tasks:
 
-Now run gulp:
+Now run gulp - the `default` task is `develop`:
 
     $ gulp [[task name]]
+
+Build:
+    
+    $ gulp build
 
 Test
 ----
 
-Test tasks:
+Test tasks using npm:
 
     $ npm test
 
