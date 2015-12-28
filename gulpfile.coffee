@@ -25,14 +25,32 @@ opts =
 gulpTaskLoader = GulpTaskLoader opts
 
 # Develop.
-gulp.task 'develop', (done)->
-    runSequence 'jade', 'imagemin', 'svgmin', 'sass:develop', 'angular-templatecache', 'webpack:develop', 'webserver', ()->
-        done()
+gulp.task 'develop', (done) ->
+  runSequence [
+    'jade'
+    'imagemin'
+    'svgmin'
+    'sass:develop'
+    'angular-templatecache'
+    'webpack:develop'
+    'webserver'
+    ],
+    () ->
+      done()
 
 # Build.
-gulp.task 'build', (done)->
-    runSequence 'jade', 'humans', 'robots', 'imagemin', 'svgmin', 'sass:build', 'webpack:build', ()->
-        done()
+gulp.task 'build', (done) ->
+  runSequence [
+    'jade'
+    'humans'
+    'robots'
+    'imagemin'
+    'svgmin'
+    'sass:build'
+    'webpack:build'
+    ],
+    () ->
+      done()
 
 # Default.
 gulp.task 'default', ['develop']
