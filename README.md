@@ -29,7 +29,7 @@ Clone repo into a new directory in your project:
     $ git clone <repo> ./gulp
     $ cd ./gulp
 
-Edit the `gulpfile.js` and `config.yml` as required:
+Edit the `gulpfile.js` and `config.yml` as required.
 
 The `default` task is `develop`.
 
