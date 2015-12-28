@@ -11,10 +11,10 @@ notify         = require 'gulp-notify'
 # Load configuration.
 config = require './config.yml'
 
-# Convert config.root to absolute path
+# Convert config.root to absolute path.
 absroot = relpath config.root
 
-# Configure gulp-task-loader
+# Configure gulp-task-loader.
 opts =
   root: absroot,
   dir: config.tasks,
